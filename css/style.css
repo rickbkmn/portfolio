@@ -1,0 +1,274 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-family: Trispace;
+  color: white;
+  margin: 0;
+}
+
+h2 {
+  font-family: Trispace;
+  color: white;
+  font-size: 2rem;
+  margin: 0;
+}
+
+h3 {
+  font-family: Trispace;
+  color: white;
+  font-size: 1rem;
+  margin: 0;
+  text-decoration: none;
+}
+
+.blok2,
+.blok4 {
+  background-color: #353535;
+}
+
+.blok {
+  width: 25%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: transparent;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.blok:hover {
+  background-color: rgba(255, 255, 255, 0.178);
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-container {
+  width: fit-content;
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  z-index: 1;
+}
+
+.plaatje {
+  margin-top: 3rem;
+  margin-right: 0rem;
+  float: right;
+  height: 25rem;
+}
+
+.plaatje-container {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  margin-top: 5rem;
+}
+
+.project-icon {
+  width: 2rem;
+}
+
+.schaduw {
+  margin-top: 3rem;
+  margin-right: 0rem;
+  float: right;
+  height: 4rem;
+}
+
+.main-navigation {
+  width: 5rem;
+  height: 100vh;
+  background-color: #000000;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.img-menu {
+  padding: 1rem;
+  margin-top: 1rem;
+  width: 3rem;
+}
+
+.title-down {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  margin: auto;
+  z-index: 1;
+}
+
+.sidenav {
+  height: 100%;
+  width: 30rem;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: -100%;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  background-image: linear-gradient(
+    90deg,
+    rgb(0, 0, 0) 0%,
+    rgb(0, 0, 0) 40%,
+    rgba(0, 212, 255, 0%) 100%
+  );
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  font-size: 3rem;
+}
+
+.sidenav .closebtn:hover {
+  color: rgb(255, 35, 35); /* Kleur verandert naar rood bij hover */
+  cursor: pointer;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+a {
+  font-family: Trispace;
+  color: white;
+  font-size: 0.5rem;
+}
+
+.product-title {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0;
+  gap: 1rem;
+  align-items: center;
+}
+
+.vaantje {
+  width: 2rem;
+  height: fit-content;
+}
+
+.product-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-section {
+  width: 100%;
+  padding: 2rem 4rem 0 4rem;
+  position: relative;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 60%;
+}
+
+.product-container {
+  position: fixed; /* Gebruik 'fixed' in plaats van 'absolute' om de container aan het scherm te binden */
+  top: 0;
+  right: 0;
+  width: 25rem;
+  height: 100vh; /* Gebruik '100vh' voor volledige hoogte van het scherm */
+  background-color: rgb(0, 0, 0); /* Optioneel, voor duidelijkheid */
+  box-shadow: -15px 0 0 0 black;
+}
+
+.scrollbar {
+  height: 100%;
+  width: 100%;
+  overflow-y: auto; /* Zorg ervoor dat de scrollbalk correct werkt */
+}
+
+.scrollable-image {
+  width: 100%; /* Afbeelding vult de breedte van de container */
+  height: auto; /* Houd de verhoudingen van de afbeelding correct */
+}
+
+.scrollable-image2 {
+  height: 100%; /* Afbeelding vult de breedte van de container */
+  width: 100%; /* Houd de verhoudingen van de afbeelding correct */
+  object-fit: cover;
+}
+
+.scrollbar2 {
+  height: 100vh;
+  width: 100%;
+  overflow-y: auto; /* Zorg ervoor dat de scrollbalk correct werkt */
+}
+
+.button {
+  background-color: #333;
+  color: rgb(255, 255, 255);
+  border: 2px solid #ffffff;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-family: Trispace;
+  margin-top: 2rem;
+}
+
+.button:hover {
+  background-color: #ffffff;
+  color: #333;
+}
+
+.product-container2 {
+  position: fixed; /* Gebruik 'fixed' in plaats van 'absolute' om de container aan het scherm te binden */
+  top: 0;
+  right: 0;
+  width: 25rem;
+  height: 100vh; /* Gebruik '100vh' voor volledige hoogte van het scherm */
+}
+
+#blok1 {
+  cursor: pointer;
+}
